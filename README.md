@@ -69,6 +69,6 @@ There are a number of places that the connection between your voice and the ligh
 - Is the Google Assistant responding with the correct phrase? If not, then your Google account and your IFTTT account aren't connected. Make sure you're using the same Google accounts for the assistant and IFTTT.
 - Is the Adafruit IO dashboard not updating when the IFTTT applet triggers? If not, then your Adafruit IO account and your IFTTT account aren't connected. Double check on IFTTT to make sure that your accounts have been linked.
 
-# DEMO: https://bit.ly/3itm8Qd
+### DEMO: https://bit.ly/3itm8Qd
 
 ### Thank You
