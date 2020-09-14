@@ -18,7 +18,7 @@ While these are the only physical materials required, this tutorial also require
 
 ## Steps to automate your home:
 
-##Step 1: Setting Up Adafruit IO
+### Step 1: Setting Up Adafruit IO
 
 Adafruit IO is an IOT platform built around the Message Queue Telemetry Transport (MQTT) Protocol. MQTT is a lightweight protocol that allows multiple devices to connect to a shared server, called the MQTT Broker, and subscribe or write to user defined topics. When a device is subscribed to a topic, the broker will send it a notification whenever that topic changes. MQTT is best suited for applications with low data rates, strict power constraints, or slow Internet connections.
 
@@ -30,13 +30,13 @@ Next, go to Dashboards in the left-hand menu. Click the Actions drop-down menu, 
 
 That's all for now on the Adafruit IO end of things. Next step is connecting your ESP8266 to the MQTT Broker.
 
-##Step 2: Connecting the NodeMcu
+### Step 2: Connecting the NodeMcu
 
 Connecting NodeMcu to the Adafruit IO system is relatively straightforward. Before you get started with the code, you'll need to install the Adafruit MQTT Client library, which can be found under the Arduino Library Manager (Sketch > Include Library > Library Manager...). Even though this library is produced and maintained by Adafruit, it can be used to connect to any MQTT server.
 
 Please see the code from Lamp_Automation.ino file
 
-Step 3: Connecting to Google Assistant Through IFTTT
+### Step 3: Connecting to Google Assistant Through IFTTT
 
 In this last step, we'll connect our Google Assistant to the Adafruit IO MQTT Broker to allow us to control the lights with voice commands. To do this, we'll use the IFTTT (If This Then That) platform, which allows hundreds of different services to trigger actions in a variety of other services.
 
@@ -54,13 +54,13 @@ Once you have that applet finished, create a second one for turning the lights "
 
 Once both applets are turned on, the setup should be complete!
 
-Step 4: Testing and Troubleshooting
+### Step 4: Testing and Troubleshooting
 
 Now all that's left is to test the system. To do this, you'll need a device with the Google Assistant enabled. This is built into the latest versions of the Android operating system, as well as the Google Home series of devices. If you don't have either of these, the Google Allo messaging app, available for Android and iOS, also includes the Google Assistant. Start up the assistant, make sure it's logged into the proper account, and say the activation phrase you used in the previous step. After a 2-5 second delay, the light on your ESP8266 board should switch on or off. Try the other phrase, and make sure it works too.
 
 Congratulations! You've just made a internet-connected, voice controlled light! Hopefully this tutorial has provided enough of a foundation that you can start making your own variety of voice-controlled IOT projects. Have fun!
 
-Troubleshooting
+## Troubleshooting
 
 There are a number of places that the connection between your voice and the light can break down. If the light isn't changing when your speak, there are a few things you should check.
 
@@ -69,6 +69,6 @@ There are a number of places that the connection between your voice and the ligh
 - Is the Google Assistant responding with the correct phrase? If not, then your Google account and your IFTTT account aren't connected. Make sure you're using the same Google accounts for the assistant and IFTTT.
 - Is the Adafruit IO dashboard not updating when the IFTTT applet triggers? If not, then your Adafruit IO account and your IFTTT account aren't connected. Double check on IFTTT to make sure that your accounts have been linked.
 
-#DEMO: https://bit.ly/3itm8Qd
+# DEMO: https://bit.ly/3itm8Qd
 
-##Thank You
+### Thank You
